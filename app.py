@@ -17,5 +17,5 @@ def static_proxy(path):
         return send_file('index.html')
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8080))
+    port = int(os.getenv("PORT", default=5000))
     app.run(host='0.0.0.0', port=port, debug=False) 
