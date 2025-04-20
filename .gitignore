@@ -1,0 +1,44 @@
+# Arquivos e pastas específicos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos e pastas específicos do ambiente de desenvolvimento
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Arquivos de build e output
+dist/
+build/
+.tmp/
+.cache/
+
+# Arquivos de editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/ 
