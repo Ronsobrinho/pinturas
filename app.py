@@ -5,6 +5,12 @@ import os
 app = Flask(__name__)
 app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
 
+# Configurações de produção
+app.config['ENV'] = 'production'
+app.config['DEBUG'] = False
+app.config['TESTING'] = False
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'sua-chave-secreta-aqui')
+
 @app.route('/')
 def home():
     return send_file('index.html')
